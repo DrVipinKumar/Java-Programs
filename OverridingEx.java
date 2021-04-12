@@ -2,7 +2,11 @@ class Area
 {
 	Area(String msg)
 	{
-		System.out.println("I am in Super Class Constructor");
+		System.out.println(msg);
+	}
+	Area()
+	{
+		this("This is calling by Defult constructor");
 	}
 	int l,b,r;
 	int getArea()
@@ -16,7 +20,7 @@ class Rectangle extends Area   //Inheritance
 //All the member of super class is the member of sub class.
 	  Rectangle(int l , int b)
 	  {
-		  super("abc");
+		 // super("abc");
 		  super.l=l;
 		  super.b=b;
 	  }
